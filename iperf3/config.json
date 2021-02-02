@@ -1,0 +1,22 @@
+{
+    "name": "iPerf3",
+    "version": "0.0.3",
+    "slug": "iperf3",
+    "description": "iPerf3 add-on for Home Assistant",
+    "arch": ["armv7", "amd64", "armhf", "aarch64", "i386"],
+    "url": "https://github.com/flipaz/hassio-addons-repository",
+    "startup": "application",
+    "boot": "manual",
+    "ports": {
+        "5201/tcp": 5201,
+        "5201/udp": 5201
+    },
+    "homeassistant": "0.108.0",
+    "options": {
+        "arguments": "-s"
+    },
+    "schema": {
+        "arguments": "str"
+    },
+    "stage": "stable"
+}
